@@ -19,14 +19,6 @@ body {
     text-align: center;
 }
 
-#hero .cta-button {
-    background-color: #e94560;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 18px;
-}
 
 /* What is RMM Section */
 #what-is-rmm {
@@ -248,10 +240,92 @@ footer {
     color: #555;
 }
 
-/* Responsive Design */
-@media (min-width: 768px) {
-    .infographic-step {
-        width: 22%;
-    }
+/* FAQ Section Styles */
+#faq {
+    background-color: #f9f9f9;
+    padding: 60px 20px;
+    text-align: left;
 }
 
+#faq h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.faq-item {
+    position: relative;
+    padding: 15px 60px 15px 0;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.faq-item h3 {
+    font-size: 1.5rem;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.faq-item p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Dynamic Icon Styling */
+.faq-item::after {
+    content: attr(data-icon);
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    color: #007bff;
+}
+
+/* Hover Effects */
+.faq-item:hover::after {
+    color: #0056b3;
+}
+
+
+
+/* CTA Button Container */
+.cta-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.cta-container .cta-button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-container .cta-button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Design for FAQ Section */
+@media (max-width: 768px) {
+    #faq h2 {
+        font-size: 2rem;
+    }
+
+    .faq-item h3 {
+        font-size: 1.25rem;
+    }
+
+    .faq-item p {
+        font-size: 0.95rem;
+    }
+}
