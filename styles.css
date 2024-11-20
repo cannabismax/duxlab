@@ -91,6 +91,67 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* Hero Section Styling */
+#hero {
+    background-color: #f4f4f4;
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.hero-logo .logo {
+    height: 150px;
+    width: auto;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.hero-text h1 {
+    font-size: 3rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 1.25rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-logo .logo {
+        margin-bottom: 20px;
+        height: 120px;
+    }
+}
+
 /* Sections */
 section {
     padding: 50px 20px;
@@ -328,4 +389,39 @@ footer {
     .faq-item p {
         font-size: 0.95rem;
     }
+}
+
+/* Header Logo */
+header .logo {
+    height: 50px;
+    width: auto;
+}
+
+/* Our Brand Section */
+#our-brand .logo-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#our-brand .logo-option img {
+    height: 150px;
+    width: auto;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+#our-brand .logo-option img:hover {
+    transform: scale(1.1);
+    border-color: #007bff;
+}
+
+/* Footer Logo */
+footer .footer-logo {
+    height: 40px;
+    width: auto;
+    margin-bottom: 10px;
 }
